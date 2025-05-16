@@ -1,20 +1,24 @@
-document.body.classList.remove("noscroll");
-const bar = document.getElementById("bar");
-const close = document.getElementById("close");
+document.body.classList.remove("noscroll"); // Remove no-scroll class from body on page load
+const bar = document.getElementById("bar"); // For open icon in navbar
+const close = document.getElementById("close"); //For close icon in navbar
 const nav = document.getElementById("navbar");
-const overlay = document.getElementById("overlay");
-const scrollButton = document.getElementById("scrollBtn");
+let mainImage = document.getElementById("mainImg"); //For main image in product page
+let smallImages = document.getElementsByClassName("smallImg"); // For small images in product page
+const scrollButton = document.getElementById("scrollBtn"); // For scroll to top button
 
+// Open Navbar
 const openNav = () => {
   nav.classList.add("active");
   document.body.classList.add("noscroll");
 };
 
+// Close Navbar
 const closeNav = () => {
   nav.classList.remove("active");
   document.body.classList.remove("noscroll");
 };
 
+// Open and close navbar when clicking on the bar icon or close icon
 if (bar) {
   bar.addEventListener("click", openNav);
 
@@ -24,6 +28,7 @@ if (bar) {
     });
   }
 
+  // Close navbar when clicking outside of it
   window.addEventListener("click", (event) => {
     if (!nav.contains(event.target) && !bar.contains(event.target)) {
       closeNav();
@@ -31,6 +36,18 @@ if (bar) {
   });
 }
 
+// Change Product main image on small image click in product page
+Array.from(smallImages).forEach((smallImg) => {
+  smallImg.addEventListener("click", function () {
+    mainImage.style.opacity = "0"; // Fade out
+    setTimeout(() => {
+      mainImage.src = this.src;
+      mainImage.style.opacity = "1"; // Fade in
+    }, 150); // Match this with your CSS transition duration
+  });
+});
+
+// Scroll Button to apppear after scrolling 300px
 window.onscroll = function () {
   if (
     document.body.scrollTop > 300 ||
@@ -42,6 +59,7 @@ window.onscroll = function () {
   }
 };
 
+// Scroll to top when the button is clicked
 scrollButton.addEventListener("click", function () {
   window.scrollTo({
     top: 0,

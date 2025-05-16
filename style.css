@@ -689,6 +689,10 @@ footer .copyright {
   padding-top: 30px;
 }
 
+#product-details #mainImg {
+  transition: opacity 0.1s ease-in-out;
+}
+
 #product-details .single-product-details h4 {
   padding: 40px 0 20px 0;
 }
