@@ -674,8 +674,6 @@ footer .copyright {
   margin-right: 50px;
 }
 
-
-
 .small-img-group {
   display: flex;
   justify-content: space-between;
@@ -734,7 +732,6 @@ footer .copyright {
 #product-details .single-product-details span {
   line-height: 25px;
 }
-
 
 /* Media Queries */
 
