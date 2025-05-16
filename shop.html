@@ -1,19 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Tech Ecomm</title>
+    <script
+      src="https://kit.fontawesome.com/c19537ed8a.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2etc Ecommerce Tutorial</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <body>
+    <!-- Header Section -->
 
-    <body>
+    <section id="header">
+      <a href="index.html"
+        ><img
+          src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402381/xvbgiqtkuvd8gaop40dt.png"
+          class="logo"
+          alt="logo"
+      /></a>
+      <div>
+        <ul id="navbar" class="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html" id="cart-icon"
+              ><i class="fa-duotone fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+          <i id="close" class="fas fa-times"></i>
+        </ul>
+        <div id="overlay"></div>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"
+          ><i id="bag" class="fa-duotone fa-solid fa-bag-shopping"></i
+        ></a>
+        <i id="bar" title="Menu" class="fas fa-outdent"></i>
+      </div>
+    </section>
 
-        <script src="script.js"></script>
-    </body>
+    <!-- Hero Section -->
 
+    <section id="hero">
+      <div id="hero-txt-holder">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+
+    <section id="features" class="section-p1">
+      <div class="fe-box">
+        <img
+          src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402294/features/dl0dmzr52et3cnppsvvu.png"
+          alt="feature1"
+        />
+        <h6>Free Shipping</h6>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402295/features/yp2l6kxkn6bzqwp14x8n.png"
+          alt="feature2"
+        />
+        <h6>Order Online</h6>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402295/features/hsq5hqoezamepflio6vs.png"
+          alt="feature3"
+        />
+        <h6>Save Money</h6>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402294/features/ie9p0pagq1ljzp56gnpw.png"
+          alt="feature4"
+        />
+        <h6>Promotions</h6>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402294/features/eqepme4sq8peks0ysw1g.png"
+          alt="feature5"
+        />
+        <h6>Happy Sell</h6>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402295/features/ogdqa6j2qixkar8xsf4i.png"
+          alt="feature6"
+        />
+        <h6>F24/7 Support</h6>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="product-container">
+        <!-- First Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402341/products/lvfgapzalgy53tzwyqbn.jpg"
+            alt="Product 1"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Second Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402344/products/dvrm8ptnry7okwiobbdf.jpg"
+            alt="Product 2"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Third Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402342/products/ejz2rsayy0vevpekcvaz.jpg"
+            alt="Product 3"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Forth Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402341/products/n7jlrunz2fck9c9xcbyb.jpg"
+            alt="Product 4"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Fifth Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402341/products/scb1dipbkiqfl1r4zuc6.jpg"
+            alt="Product 5"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Sixth Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402341/products/ni9n2pjoujgzgnjaipse.jpg"
+            alt="Product 6"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Seventh Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402340/products/kazeochilw9yjqunp5eo.jpg"
+            alt="Product 7"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Eighth Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402342/products/kampfnhjpewztctcygkg.jpg"
+            alt="Product 8"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section -->
+
+    <section id="banner" class="section-m1">
+      <h4>Repair Services</h4>
+      <h2>Up to <span>70% Off</span> - All t-shirts and Accessories</h2>
+      <button class="normal">Explore More</button>
+    </section>
+
+    <!-- New Arrivals Section -->
+
+    <section id="product1" class="section-p1">
+      <h2>New Arrivals</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="product-container">
+        <!-- First Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402344/products/fyxlm1slyaprnyczypez.jpg"
+            alt="New Arrival 1"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Second Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402345/products/gapbukcpo3200khkxria.jpg"
+            alt="New Arrival 2"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Third Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402345/products/ssrtfezuxmctmlkyuk92.jpg"
+            alt="New Arrival 3"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Forth Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402344/products/fqklg3kmq6i4s7pvcvln.jpg"
+            alt="New Arrival 4"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Fifth Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402343/products/cedsv1082ae4tftwtvxk.jpg"
+            alt="New Arrival 5"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Sixth Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402343/products/s4lbktsfuure8nkfzan2.jpg"
+            alt="New Arrival 6"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Seventh Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402343/products/fiimrsmvp68bxgpwnape.jpg"
+            alt="New Arrival 7"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+        <!-- Eighth Product -->
+        <div class="product">
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402340/products/lkwkin8t2kul0l2moflr.jpg"
+            alt="New Arrival 8"
+          />
+          <div class="description">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#" title="Add to cart"
+            ><i class="fa-solid fa-cart-shopping cart"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section 2 -->
+
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box">
+        <h4>crazy deals</h4>
+        <h2>buy 1 get 1 free</h2>
+        <span>the best classic dress is on sale at t-tech</span>
+        <button class="white">Learn More</button>
+      </div>
+      <div class="banner-box banner-box2">
+        <h4>spring/summer</h4>
+        <h2>upcomming season</h2>
+        <span>the best classic dress is on sale at t-tech</span>
+        <button class="white">Collection</button>
+      </div>
+    </section>
+
+    <!-- Banner Section 3 -->
+
+    <section id="banner3">
+      <div class="banner-box">
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter Collection 50% off</h3>
+      </div>
+      <div class="banner-box banner-box2">
+        <h2>NEW FOOTWEAR COLLECTION</h2>
+        <h3>Spring/Summer 2025</h3>
+      </div>
+      <div class="banner-box banner-box3">
+        <h2>T-SHIRTS</h2>
+        <h3>New Trendy Prints</h3>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div id="newstext">
+        <h4>Sign Up for Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="email" placeholder="Your email address" required />
+        <button title="Click to sign up for newsletters" class="normal">
+          Sign Up
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="section-p1">
+      <div class="col-container">
+        <div class="col">
+          <img
+            class="logo"
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402381/xvbgiqtkuvd8gaop40dt.png"
+            alt="logo"
+          />
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> 123 Street, City, Country</p>
+          <p><strong>Phone:</strong> +123 456 7890</p>
+          <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Fri</p>
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+            <img
+              src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402308/pay/xhtls40dkcbphn9fwadn.jpg"
+              alt="app store"
+            />
+            <img
+              src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402309/pay/wxqgv9majyqb4lmodwhd.jpg"
+              alt="google play"
+            />
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img
+            src="https://res.cloudinary.com/df0k88iqd/image/upload/v1747402308/pay/exeygt42269ja2sjsl02.png"
+            alt="payment methods"
+          />
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 T-Tech. All rights reserved. Designed by Your Name</p>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button -->
+    <button id="scrollBtn" title="Go to top" class="scroll-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
 </html>
