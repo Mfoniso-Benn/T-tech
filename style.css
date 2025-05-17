@@ -637,6 +637,7 @@ footer .copyright {
   justify-content: center;
   text-align: center;
   padding: 14px;
+  align-items: center;
 }
 
 #page-header h2,
