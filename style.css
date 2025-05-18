@@ -918,6 +918,22 @@ footer .copyright {
     width: 100%;
   }
 
+  /* Style for Product Page Product Detail */
+
+  #product-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #product-details .single-product-img {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #product-details .single-product-details {
+    width: 100%;
+  }
+
   footer .copyright {
     text-align: start;
   }
