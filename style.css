@@ -738,6 +738,12 @@ footer .copyright {
   line-height: 25px;
 }
 
+/* Blog Page */
+
+#page-header .blog-header {
+  background-image: url("https://res.cloudinary.com/df0k88iqd/image/upload/v1747402275/banner/kgcosr6ds6amd0b0stm2.jpg") !important;
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
